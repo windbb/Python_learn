@@ -1,0 +1,51 @@
+https://www.delftstack.com/zh-tw/howto/python/how-to-delete-a-file-and-directory/
+
+Python 刪除檔案
+
+import os
+
+fileTest = r"C:\Test\test.txt"
+
+try:
+    os.remove(fileTest)
+except OSError as e:
+    print(e)
+else:
+    print("File is deleted successfully")
+
+Python 刪除資料夾
+import shutil
+
+pathTest = r"C:\Test"
+
+try:
+    shutil.rmtree(pathTest)
+except OSError as e:
+    print(e)
+else:
+    print("The directory is deleted successfully")
+
+
+
+
+https://jennaweng0621.pixnet.net/blog/post/403501712-%E4%BD%BF%E7%94%A8shutil%E6%A8%A1%E7%B5%84%E5%8D%94%E5%8A%A9%E8%A4%87%E8%A3%BD%E3%80%81%E7%A7%BB%E5%8B%95%E3%80%81%E5%88%AA%E9%99%A4%E7%9B%AE%E9%8C%84%E6%88%96%E6%AA%94
+
+
+https://www.itread01.com/content/1549405092.html
+
+Python3 split()方法
+https://www.runoob.com/python3/python3-string-split.html
+
+
+
+以下?例以 # ??分隔符，指定第二???? 1，返回????列表。
+?例(Python 2.0+)
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
+txt = "Google#Runoob#Taobao#Facebook"
+ 
+# 第二???? 1，返回????列表
+x = txt.split("#", 1)
+ 
+print x
